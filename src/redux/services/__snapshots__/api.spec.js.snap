@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`api request should execute a GET successfully 1`] = `
+Object {
+  "hello": "world",
+}
+`;
+
+exports[`api request should execute a GET successfully and return response text 1`] = `"hello"`;
+
+exports[`api request should execute a POST successfully 1`] = `
+Object {
+  "a": 1,
+}
+`;
+
+exports[`api request should reject for a not found error 1`] = `
+Object {
+  "error": "FAILED",
+}
+`;
+
+exports[`api request should reject for a server error with JSON response 1`] = `[Error: Failed]`;
+
+exports[`api request should reject with response text 1`] = `
+Object {
+  "response": "FAILED",
+  "status": 400,
+}
+`;

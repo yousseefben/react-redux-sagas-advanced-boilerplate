@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Example should handle EXAMPLE_GET 1`] = `
+Object {
+  "data": Array [],
+  "error": null,
+  "fetching": false,
+  "q": "react",
+  "success": false,
+}
+`;
+
+exports[`Example should handle EXAMPLE_SAVE 1`] = `
+Object {
+  "data": Array [],
+  "error": null,
+  "fetching": false,
+  "q": "react",
+  "success": false,
+}
+`;
+
+exports[`Example should return actual state 1`] = `
+Object {
+  "data": Array [
+    Object {
+      "q": "react",
+    },
+  ],
+  "error": null,
+  "fetching": false,
+  "success": false,
+}
+`;
+
+exports[`Example should return the initial state 1`] = `
+Object {
+  "data": Array [],
+  "error": null,
+  "fetching": false,
+  "success": false,
+}
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`action utils action creator should return action 1`] = `
+Object {
+  "payload": Object {
+    "a": "1",
+  },
+  "type": "TEST",
+}
+`;
+
+exports[`action utils action type creator should return action type 1`] = `
+Object {
+  "GET": "TEST_GET",
+  "POST": "TEST_POST",
+}
+`;
