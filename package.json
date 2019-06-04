@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "lodash": "^4.17.11",
+    "oidc-client": "^1.7.1",
     "proptypes": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -18,33 +19,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage",
+    "test": "CI=true react-scripts test --bail --coverage",
     "eject": "react-scripts eject",
     "lint": "eslint 'src/**/*.{js,jsx}'",
     "format": "prettier --write 'src/**/*.{js,jsx,css,scss}'",
-    "lint-staged": {
-      "*.{js,jsx}": [
-        "pretty-quick --staged",
-        "eslint src/ --fix",
-        "git add"
-      ]
-    },
     "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "devDependencies": {
     "cypress": "^3.3.1",
@@ -64,9 +46,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm lint-stagged",
+      "pre-commit": "lint-staged",
       "pre-push": "npm test"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "pretty-quick --staged",
+      "eslint src/ --fix",
+      "git add"
+    ]
   },
   "jest": {
     "collectCoverageFrom": [
@@ -76,11 +65,23 @@
     ],
     "coverageThreshold": {
       "global": {
-        "statements": 50,
-        "branches": 50,
-        "functions": 50,
-        "lines": 50
+        "statements": 40,
+        "branches": 40,
+        "functions": 40,
+        "lines": 40
       }
     }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

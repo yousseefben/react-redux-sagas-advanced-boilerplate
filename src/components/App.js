@@ -1,13 +1,15 @@
 import React from 'react';
+import { Route, Router } from 'react-router-dom';
+import { history } from '../redux/services/history';
+import HomePage from '../pages/HomePage';
+import CallbackPage from '../redux/services/authentication/callback';
 
-const ExampleComponent = React.lazy(() => import('./Example/ExampleComponent'));
-
-const App = () => (
-  <div>
-    hello
-    <React.Suspense fallback={<div>Loading ...</div>}>
-      <ExampleComponent />
-    </React.Suspense>
-  </div>
-);
+const App = () => {
+  return (
+    <Router history={history}>
+      <Route path="/" component={HomePage} />
+      <Route path="/callback" component={CallbackPage} />
+    </Router>
+  );
+};
 export default App;
