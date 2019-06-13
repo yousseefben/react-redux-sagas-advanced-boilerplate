@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render component 1`] = `
+<div
+  data-testid="div"
+>
+  hello example!
+  <table>
+    <tbody>
+      <tr>
+        <th>
+          id
+        </th>
+        <th>
+          title
+        </th>
+        <th>
+          Body
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <button
+    class="ant-btn"
+    type="button"
+  >
+    <span>
+      Click here!
+    </span>
+  </button>
+</div>
+`;

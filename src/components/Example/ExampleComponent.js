@@ -1,6 +1,7 @@
 import React from 'react';
+import { Button } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
-import example from './exampleActions';
+import example from './redux/exampleActions';
 import {
   exampleDataSelector,
   exampleFetchingSelector
@@ -11,8 +12,11 @@ const ExampleComponent = () => {
   const data = useSelector(exampleDataSelector());
   const fetching = useSelector(exampleFetchingSelector());
 
+  const fetchExample = () => {
+    dispatch(example.get());
+  };
   return (
-    <div>
+    <div data-testid="div">
       hello example!
       <table>
         <tbody>
@@ -27,7 +31,7 @@ const ExampleComponent = () => {
             </tr>
           )}
           {data.map(d => (
-            <tr className="data">
+            <tr className="data" key={d.id}>
               <td>{d.id}</td>
               <td>{d.title}</td>
               <td>{d.body}</td>
@@ -35,7 +39,7 @@ const ExampleComponent = () => {
           ))}
         </tbody>
       </table>
-      <button onClick={() => dispatch(example.get())}>Click here!</button>
+      <Button onClick={fetchExample}>Click here!</Button>
     </div>
   );
 };
