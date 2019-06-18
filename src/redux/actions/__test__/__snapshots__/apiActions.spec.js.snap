@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return delete action 1`] = `
+Object {
+  "payload": Object {
+    "error": null,
+    "fetching": true,
+    "id": 1,
+    "success": false,
+  },
+  "type": "TEST_DELETE",
+}
+`;
+
+exports[`should return failure action 1`] = `
+Object {
+  "payload": Object {
+    "fetching": false,
+    "success": false,
+  },
+  "type": "TEST_FAILURE",
+}
+`;
+
+exports[`should return get action 1`] = `
+Object {
+  "payload": Object {
+    "error": null,
+    "fetching": true,
+    "success": false,
+  },
+  "type": "TEST_GET",
+}
+`;
+
+exports[`should return getone action 1`] = `
+Object {
+  "payload": Object {
+    "error": null,
+    "fetching": true,
+    "id": 1,
+    "success": false,
+  },
+  "type": "TEST_GET_ONE",
+}
+`;
+
+exports[`should return patch action 1`] = `
+Object {
+  "payload": Object {
+    "error": null,
+    "fetching": true,
+    "id": 1,
+    "success": false,
+  },
+  "type": "TEST_PATCH",
+}
+`;
+
+exports[`should return put action 1`] = `
+Object {
+  "payload": Object {
+    "error": null,
+    "fetching": true,
+    "id": 1,
+    "success": false,
+  },
+  "type": "TEST_PUT",
+}
+`;
+
+exports[`should return save action 1`] = `
+Object {
+  "payload": Object {
+    "error": null,
+    "fetching": true,
+    "success": false,
+  },
+  "type": "TEST_SAVE",
+}
+`;
+
+exports[`should return success action 1`] = `
+Object {
+  "payload": Object {
+    "error": null,
+    "fetching": false,
+    "success": true,
+  },
+  "type": "TEST_SUCCESS",
+}
+`;

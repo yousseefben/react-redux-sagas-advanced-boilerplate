@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`can render component 1`] = `
+exports[`should render example component 1`] = `
 <div
   data-testid="div"
 >
@@ -17,6 +17,17 @@ exports[`can render component 1`] = `
         <th>
           Body
         </th>
+      </tr>
+      <tr
+        class="data"
+      >
+        <td>
+          1
+        </td>
+        <td>
+          title
+        </td>
+        <td />
       </tr>
     </tbody>
   </table>

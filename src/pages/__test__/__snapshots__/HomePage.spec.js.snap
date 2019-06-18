@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render HomePage 1`] = `
+<body>
+  <div>
+    <div
+      data-testid="home"
+    >
+      hello
+      <button
+        class="ant-btn"
+        data-testid="btn-login"
+        style="display: none;"
+        type="button"
+      >
+        <span>
+          Log In
+        </span>
+      </button>
+      <div>
+        Loading ...
+      </div>
+    </div>
+  </div>
+</body>
+`;

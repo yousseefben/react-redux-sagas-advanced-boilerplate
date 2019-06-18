@@ -21,7 +21,7 @@ const init = {
   }
 };
 
-test('can dipsatch action and show loading', async () => {
+test('should dipsatch action and show loading', async () => {
   const { getByText } = renderWithRedux(<ExampleComponent />);
 
   jest.spyOn(example, 'get');
@@ -31,8 +31,8 @@ test('can dipsatch action and show loading', async () => {
   await waitForElement(() => expect(getByText('Loading data ...')));
 });
 
-test('can render component', async () => {
-  const { getByTestId } = renderWithRedux(<ExampleComponent />);
+test('should render example component', async () => {
+  const { getByTestId } = renderWithRedux(<ExampleComponent />, init);
 
   expect(getByTestId('div')).toMatchSnapshot();
 });

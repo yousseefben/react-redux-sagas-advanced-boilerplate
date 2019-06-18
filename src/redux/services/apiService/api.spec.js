@@ -1,5 +1,8 @@
 import { request } from './api';
-import { mockFailedResponse, mockSuccesfulResponse } from './mockApi';
+import {
+  mockFailedResponse,
+  mockSuccesfulResponse
+} from '../../../utils/mockApi';
 
 describe('api', () => {
   describe('request', () => {

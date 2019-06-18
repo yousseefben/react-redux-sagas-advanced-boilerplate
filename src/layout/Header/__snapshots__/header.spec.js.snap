@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render HeaderContent 1`] = `
+<body>
+  <div>
+    <ul
+      class="ant-menu header ant-menu-light ant-menu-root ant-menu-horizontal"
+      role="menu"
+    />
+  </div>
+</body>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`action utils should return action 1`] = `
+Object {
+  "payload": Object {
+    "a": "1",
+  },
+  "type": "TEST",
+}
+`;
+
+exports[`action utils should return action type 1`] = `
+Object {
+  "GET": "TEST_GET",
+  "POST": "TEST_POST",
+}
+`;
+
+exports[`action utils should return action type with no actions 1`] = `Object {}`;
+
+exports[`action utils should return action with no data 1`] = `
+Object {
+  "payload": Object {},
+  "type": "TEST",
+}
+`;

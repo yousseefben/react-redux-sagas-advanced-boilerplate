@@ -1,7 +1,7 @@
 import React from 'react';
 import { CallbackComponent } from 'redux-oidc';
 import userManager from './utils/userManager';
-import { history } from '../history';
+import { history } from '../../../utils/history';
 
 const CallbackPage = () => {
   return (

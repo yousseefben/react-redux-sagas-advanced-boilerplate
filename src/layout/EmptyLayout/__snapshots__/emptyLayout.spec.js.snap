@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render EmptyLayout 1`] = `
+<body>
+  <div>
+    <section
+      class="ant-layout"
+    >
+      <main
+        class="ant-layout-content"
+      />
+    </section>
+  </div>
+</body>
+`;

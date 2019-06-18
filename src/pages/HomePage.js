@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'antd';
 import userManager from '../redux/services/authentication/utils/userManager';
 
 const ExampleComponent = React.lazy(() =>
@@ -6,17 +7,18 @@ const ExampleComponent = React.lazy(() =>
 );
 
 const HomePage = () => (
-  <div>
+  <div data-testid="home">
     hello
     <React.Suspense fallback={<div>Loading ...</div>}>
       <ExampleComponent />
-      <button
+      <Button
+        data-testid="btn-login"
         onClick={() => {
           userManager.signinRedirect();
         }}
       >
         Log In
-      </button>
+      </Button>
     </React.Suspense>
   </div>
 );

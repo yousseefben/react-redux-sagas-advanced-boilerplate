@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render MainLayout 1`] = `
+<body>
+  <div>
+    <section
+      class="ant-layout"
+    >
+      <header
+        class="ant-layout-header"
+      >
+        <ul
+          class="ant-menu header ant-menu-light ant-menu-root ant-menu-horizontal"
+          role="menu"
+        />
+      </header>
+      <section
+        class="ant-layout ant-layout-has-sider"
+        style="min-height: 100vh;"
+      >
+        <aside
+          class="ant-layout-sider ant-layout-sider-light ant-layout-sider-has-trigger"
+          style="flex: 0 0 180px; max-width: 180px; min-width: 180px; width: 180px;"
+        >
+          <div
+            class="ant-layout-sider-children"
+          >
+            <ul
+              class="ant-menu ant-menu-light ant-menu-root ant-menu-inline"
+              role="menu"
+            >
+              <li
+                class="ant-menu-item"
+                role="menuitem"
+                style="padding-left: 24px;"
+              >
+                <a
+                  href="/factures"
+                >
+                  <i
+                    aria-label="icon: bar-chart"
+                    class="anticon anticon-bar-chart"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="bar-chart"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-600-80h56c4.4 0 8-3.6 8-8V560c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v144c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V384c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v320c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V462c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v242c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V304c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v400c0 4.4 3.6 8 8 8z"
+                      />
+                    </svg>
+                  </i>
+                  <span>
+                    Factures
+                  </span>
+                </a>
+              </li>
+              <li
+                class="ant-menu-item"
+                role="menuitem"
+                style="padding-left: 24px;"
+              >
+                <a
+                  href="/clients"
+                >
+                  <i
+                    aria-label="icon: car"
+                    class="anticon anticon-car"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="car"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M380 704h264c4.4 0 8-3.6 8-8v-84c0-4.4-3.6-8-8-8h-40c-4.4 0-8 3.6-8 8v36H428v-36c0-4.4-3.6-8-8-8h-40c-4.4 0-8 3.6-8 8v84c0 4.4 3.6 8 8 8zm340-123a40 40 0 1 0 80 0 40 40 0 1 0-80 0zm239-167.6L935.3 372a8 8 0 0 0-10.9-2.9l-50.7 29.6-78.3-216.2a63.9 63.9 0 0 0-60.9-44.4H301.2c-34.7 0-65.5 22.4-76.2 55.5l-74.6 205.2-50.8-29.6a8 8 0 0 0-10.9 2.9L65 413.4c-2.2 3.8-.9 8.6 2.9 10.8l60.4 35.2-14.5 40c-1.2 3.2-1.8 6.6-1.8 10v348.2c0 15.7 11.8 28.4 26.3 28.4h67.6c12.3 0 23-9.3 25.6-22.3l7.7-37.7h545.6l7.7 37.7c2.7 13 13.3 22.3 25.6 22.3h67.6c14.5 0 26.3-12.7 26.3-28.4V509.4c0-3.4-.6-6.8-1.8-10l-14.5-40 60.3-35.2a8 8 0 0 0 3-10.8zM840 517v237H184V517l15.6-43h624.8l15.6 43zM292.7 218.1l.5-1.3.4-1.3c1.1-3.3 4.1-5.5 7.6-5.5h427.6l75.4 208H220l72.7-199.9zM224 581a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+                      />
+                    </svg>
+                  </i>
+                  <span>
+                    Clients
+                  </span>
+                </a>
+              </li>
+              <li
+                class="ant-menu-item"
+                role="menuitem"
+                style="padding-left: 24px;"
+              >
+                <a
+                  href="/notifications"
+                >
+                  <i
+                    aria-label="icon: car"
+                    class="anticon anticon-car"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      data-icon="car"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M380 704h264c4.4 0 8-3.6 8-8v-84c0-4.4-3.6-8-8-8h-40c-4.4 0-8 3.6-8 8v36H428v-36c0-4.4-3.6-8-8-8h-40c-4.4 0-8 3.6-8 8v84c0 4.4 3.6 8 8 8zm340-123a40 40 0 1 0 80 0 40 40 0 1 0-80 0zm239-167.6L935.3 372a8 8 0 0 0-10.9-2.9l-50.7 29.6-78.3-216.2a63.9 63.9 0 0 0-60.9-44.4H301.2c-34.7 0-65.5 22.4-76.2 55.5l-74.6 205.2-50.8-29.6a8 8 0 0 0-10.9 2.9L65 413.4c-2.2 3.8-.9 8.6 2.9 10.8l60.4 35.2-14.5 40c-1.2 3.2-1.8 6.6-1.8 10v348.2c0 15.7 11.8 28.4 26.3 28.4h67.6c12.3 0 23-9.3 25.6-22.3l7.7-37.7h545.6l7.7 37.7c2.7 13 13.3 22.3 25.6 22.3h67.6c14.5 0 26.3-12.7 26.3-28.4V509.4c0-3.4-.6-6.8-1.8-10l-14.5-40 60.3-35.2a8 8 0 0 0 3-10.8zM840 517v237H184V517l15.6-43h624.8l15.6 43zM292.7 218.1l.5-1.3.4-1.3c1.1-3.3 4.1-5.5 7.6-5.5h427.6l75.4 208H220l72.7-199.9zM224 581a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+                      />
+                    </svg>
+                  </i>
+                  <span>
+                    Notifications
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="ant-layout-sider-trigger"
+            style="width: 180px;"
+          >
+            <i
+              aria-label="icon: left"
+              class="anticon anticon-left"
+            >
+              <svg
+                aria-hidden="true"
+                class=""
+                data-icon="left"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+                />
+              </svg>
+            </i>
+          </div>
+        </aside>
+        <section
+          class="ant-layout"
+        >
+          <main
+            class="ant-layout-content"
+          />
+        </section>
+      </section>
+    </section>
+  </div>
+</body>
+`;
