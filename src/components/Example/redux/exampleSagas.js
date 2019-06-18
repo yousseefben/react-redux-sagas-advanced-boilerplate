@@ -1,9 +1,9 @@
 import { put, call, takeLatest, all } from 'redux-saga/effects';
-import { request } from '../../redux/services/apiService/api';
+import { request } from '../../../redux/services/apiService/api';
 
-import { EXAMPLE } from '../../redux/actions/types';
+import { EXAMPLE } from '../../../redux/actions/types';
 
-import example from './redux/exampleActions';
+import example from './exampleActions';
 
 export function* getExamples() {
   try {

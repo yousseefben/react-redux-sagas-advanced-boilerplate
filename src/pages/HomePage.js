@@ -8,7 +8,6 @@ const ExampleComponent = React.lazy(() =>
 
 const HomePage = () => (
   <div data-testid="home">
-    hello
     <React.Suspense fallback={<div>Loading ...</div>}>
       <ExampleComponent />
       <Button

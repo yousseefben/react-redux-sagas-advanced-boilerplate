@@ -1,5 +1,5 @@
-import reducer from '../redux/exampleReducer';
-import { EXAMPLE } from '../../../redux/actions/types';
+import reducer from '../exampleReducer';
+import { EXAMPLE } from '../../../../redux/actions/types';
 
 const initialState = {
   data: [

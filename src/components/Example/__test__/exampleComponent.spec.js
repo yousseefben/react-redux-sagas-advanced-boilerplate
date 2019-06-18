@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { fireEvent, cleanup, waitForElement } from '@testing-library/react';
+import { fireEvent, cleanup } from '@testing-library/react';
 import ExampleComponent from '../ExampleComponent';
 import example from '../redux/exampleActions';
 import { renderWithRedux } from '../../../utils/test_utils';
@@ -28,7 +28,6 @@ test('should dipsatch action and show loading', async () => {
 
   fireEvent.click(getByText('Click here!'));
   expect(example.get).toHaveBeenCalledTimes(1);
-  await waitForElement(() => expect(getByText('Loading data ...')));
 });
 
 test('should render example component', async () => {

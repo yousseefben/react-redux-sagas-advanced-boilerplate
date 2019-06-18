@@ -161,7 +161,6 @@ exports[`should render App 1`] = `
             <div
               data-testid="home"
             >
-              hello
               <button
                 class="ant-btn"
                 data-testid="btn-login"
