@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Router history={history}>
       <LayoutRoute path="/" layout={MainLayout} component={HomePage} />
-      <PrivateLayoutRoute />
+      <PrivateLayoutRoute path="/private" />
       <Route path="/callback" component={CallbackPage} />
     </Router>
   );
