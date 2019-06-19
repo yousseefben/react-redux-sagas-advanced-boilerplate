@@ -45,7 +45,9 @@ const ExampleComponent = () => {
           loading={fetching}
           rowKey={record => record.id}
         />
-        <Button onClick={fetchExample}>Click here!</Button>
+        <Button onClick={fetchExample} className="click-btn">
+          Click here!
+        </Button>
       </Card>
     </div>
   );

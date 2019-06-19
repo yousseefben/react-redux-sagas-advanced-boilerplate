@@ -1,0 +1,11 @@
+diff a/cypress/integration/homePage/actions.spec.js b/cypress/integration/homePage/actions.spec.js	(rejected hunks)
+@@ -1 +1 @@
+-/// <reference types="Cypress" />
++// / <reference types="Cypress" />
+@@ -21,3 +21,3 @@ context('Actions', () => {
+-      .type('{alt}{option}') //these are equivalent
+-      .type('{ctrl}{control}') //these are equivalent
+-      .type('{meta}{command}{cmd}') //these are equivalent
++      .type('{alt}{option}') // these are equivalent
++      .type('{ctrl}{control}') // these are equivalent
++      .type('{meta}{command}{cmd}') // these are equivalent

@@ -59,7 +59,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm test"
+      "pre-push": "yarn test"
     }
   },
   "lint-staged": {
@@ -72,7 +72,6 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
-      "!src/**/index.js",
       "!src/**/store/*",
       "!src/*.js",
       "!src/utils/*"
