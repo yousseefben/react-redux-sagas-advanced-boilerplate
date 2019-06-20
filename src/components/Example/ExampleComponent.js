@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button, Table, Card } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import example from './redux/exampleActions';

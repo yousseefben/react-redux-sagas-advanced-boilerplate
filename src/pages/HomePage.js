@@ -8,16 +8,16 @@ const ExampleComponent = React.lazy(() =>
 
 const HomePage = () => (
   <div data-testid="home">
-    <React.Suspense fallback={<div>Loading ...</div>}>
+    <Button
+      data-testid="btn-login"
+      onClick={() => {
+        userManager.signinRedirect();
+      }}
+    >
+      Log In
+    </Button>
+    <React.Suspense fallback={<div>Loading Example...</div>}>
       <ExampleComponent />
-      <Button
-        data-testid="btn-login"
-        onClick={() => {
-          userManager.signinRedirect();
-        }}
-      >
-        Log In
-      </Button>
     </React.Suspense>
   </div>
 );
