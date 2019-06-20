@@ -9,7 +9,6 @@ exports[`should render HomePage 1`] = `
       <button
         class="ant-btn"
         data-testid="btn-login"
-        style="display: none;"
         type="button"
       >
         <span>
@@ -17,7 +16,7 @@ exports[`should render HomePage 1`] = `
         </span>
       </button>
       <div>
-        Loading ...
+        Loading Example...
       </div>
     </div>
   </div>
