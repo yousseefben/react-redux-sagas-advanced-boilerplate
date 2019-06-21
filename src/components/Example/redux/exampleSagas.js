@@ -7,7 +7,7 @@ import example from './exampleActions';
 
 export function* getExamples() {
   try {
-    const data = yield call(
+    const { data } = yield call(
       request,
       'https://jsonplaceholder.typicode.com/posts/'
     );
@@ -20,10 +20,12 @@ export function* getExamples() {
 export function* getExampleById(action) {
   try {
     const { id } = action.payload;
-    const data = yield call(
+    const resp = yield call(
       request,
       `https://jsonplaceholder.typicode.com/posts/${id}`
     );
+    const { data } = resp;
+
     yield put(example.success({ data }));
   } catch (e) {
     yield put(example.failure({ error: e.message }));

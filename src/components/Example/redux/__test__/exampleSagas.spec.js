@@ -8,7 +8,7 @@ describe('example sagas', () => {
     testSaga(getExamples)
       .next()
       .call(request, 'https://jsonplaceholder.typicode.com/posts/')
-      .next('data')
+      .next({ data: 'data' })
       .put(example.success({ data: 'data' }))
       .next()
       .isDone();
@@ -28,7 +28,7 @@ describe('example sagas', () => {
     testSaga(getExampleById, { payload: { id: 1 } })
       .next()
       .call(request, 'https://jsonplaceholder.typicode.com/posts/1')
-      .next('data')
+      .next({ data: 'data' })
       .put(example.success({ data: 'data' }))
       .next()
       .isDone();

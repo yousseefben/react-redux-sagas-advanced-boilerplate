@@ -1,8 +1,9 @@
 import { request } from './api';
-import {
-  mockFailedResponse,
-  mockSuccesfulResponse
-} from '../../../utils/mockApi';
+import { mock } from '../../../utils/mockApi';
+
+beforeEach(() => {
+  mock.resetHandlers();
+});
 
 describe('api', () => {
   describe('request', () => {
@@ -15,66 +16,48 @@ describe('api', () => {
         request('http://example.com/token', { method: 'POST' })
       ).toThrow('Error! You must pass `payload`');
     });
-    //
-    it('should execute a GET successfully', done => {
-      mockSuccesfulResponse(200, 'GET', { hello: 'world' });
 
-      request('http://example.com/token').then(data => {
-        expect(data).toMatchSnapshot();
+    it('should execute a GET successfully', done => {
+      mock.onAny().reply(200, { hello: 'world' });
+
+      request('http://example.com/token').then(response => {
+        expect(response.data).toMatchSnapshot();
         done();
       });
     });
     it('should execute a GET successfully and return response text', done => {
-      mockSuccesfulResponse(200, 'GET', 'hello', 'machin');
+      mock.onAny().reply(200, 'hello');
 
-      request('http://example.com/token').then(data => {
-        expect(data).toMatchSnapshot();
+      request('http://example.com/token').then(response => {
+        expect(response.data).toMatchSnapshot();
         done();
       });
     });
 
     it('should execute a POST successfully', done => {
-      mockSuccesfulResponse(201, 'POST', { a: 1 });
+      mock.onAny().reply(200, { a: 1 });
+
       request('http://example.com/token', {
         method: 'POST',
         payload: { a: 1 }
-      }).then(data => {
-        expect(data).toMatchSnapshot();
+      }).then(response => {
+        expect(response.data).toMatchSnapshot();
         done();
       });
     });
 
     it('should reject for a  bad request', done => {
-      mockSuccesfulResponse(400, 'GET', { error: 'Something went wrong' });
+      mock.onAny().reply(400);
 
-      request('http://example.com/token').catch(error => {
-        expect(error.response).toEqual({ error: 'Something went wrong' });
-        expect(error.status).toBe(400);
-        done();
-      });
-    });
-
-    it('should reject for a server error with JSON response', done => {
-      mockFailedResponse('Failed');
       request('http://example.com/token').catch(error => {
         expect(error).toMatchSnapshot();
         done();
       });
     });
 
-    it('should reject for a not found error', done => {
-      mockSuccesfulResponse(404, 'GET', { error: 'FAILED' });
-
+    it('should reject for a server error with JSON response', done => {
+      mock.onAny().reply(500);
       request('http://example.com/token').catch(error => {
-        expect(error.response).toMatchSnapshot();
-        done();
-      });
-    });
-    it('should reject with response text', done => {
-      mockSuccesfulResponse(400, 'GET', 'FAILED', 'machin');
-
-      request('http://example.com/token').catch(error => {
-        expect(error.response).toEqual('FAILED');
         expect(error).toMatchSnapshot();
         done();
       });
