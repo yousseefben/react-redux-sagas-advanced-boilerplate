@@ -3,7 +3,7 @@ import React from 'react';
 import { fireEvent, cleanup } from '@testing-library/react';
 import HomePage from '../HomePage';
 import { renderWithRedux } from '../../utils/test_utils';
-import userManager from '../../redux/services/authentication/utils/userManager';
+import userManager from '../../common/services/authentication/utils/userManager';
 
 afterEach(cleanup);
 

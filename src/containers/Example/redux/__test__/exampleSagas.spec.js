@@ -1,7 +1,7 @@
 import { expectSaga, testSaga } from 'redux-saga-test-plan';
 import examplSaga, { getExampleById, getExamples } from '../exampleSagas';
 import example from '../exampleActions';
-import { request } from '../../../../redux/services/apiService/api';
+import { request } from '../../../../common/services/apiService/api';
 
 describe('example sagas', () => {
   it('should getExamples dipsatch success', () => {

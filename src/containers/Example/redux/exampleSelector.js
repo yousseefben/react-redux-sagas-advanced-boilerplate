@@ -2,7 +2,7 @@ import {
   errorSelector,
   fetchingSelector,
   getDataSelector
-} from '../../../redux/selectors';
+} from '../../../common/selectors';
 
 const ENTITY = 'exampleData';
 

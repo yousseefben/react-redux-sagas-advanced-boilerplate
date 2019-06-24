@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from 'antd';
-import userManager from '../redux/services/authentication/utils/userManager';
+import userManager from '../common/services/authentication/utils/userManager';
 
 const ExampleComponent = React.lazy(() =>
-  import('../components/Example/ExampleComponent')
+  import('../containers/Example/ExampleComponent')
 );
 
 const HomePage = () => (

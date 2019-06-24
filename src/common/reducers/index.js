@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { reducer as oidcReducer } from 'redux-oidc';
-import exampleReducer from '../../components/Example/redux/exampleReducer';
+import exampleReducer from '../../containers/Example/redux/exampleReducer';
 
 const rootReducer = asyncReducers =>
   combineReducers({

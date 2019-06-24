@@ -1,7 +1,7 @@
 import { put, call, takeLatest, all } from 'redux-saga/effects';
-import { request } from '../../../redux/services/apiService/api';
+import { request } from '../../../common/services/apiService/api';
 
-import { EXAMPLE } from '../../../redux/actions/types';
+import { EXAMPLE } from '../../../common/actions/types';
 
 import example from './exampleActions';
 

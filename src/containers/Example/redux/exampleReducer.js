@@ -1,5 +1,5 @@
 import { merge } from 'lodash';
-import { EXAMPLE } from '../../../redux/actions/types';
+import { EXAMPLE } from '../../../common/actions/types';
 
 const initialState = {
   data: [],
