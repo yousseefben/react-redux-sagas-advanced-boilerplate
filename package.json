@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.19.2",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "axios-mock-adapter": "^1.16.0",
     "formik": "^1.5.7",
     "lodash": "^4.17.11",
